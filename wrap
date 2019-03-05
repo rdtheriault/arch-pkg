@@ -1,0 +1,18 @@
+if [ -z $1 ]; then
+	echo "Commands availiable
+	install 	install packages
+	search		find packages
+	find		^^^^^^^^^^^^^
+	update		performs `-Sy`, not recomended, use upgrade
+	upgrade		performs system upgrade"
+
+else
+
+	if [ $1 = "update" ]; then
+		exec yay -Sy
+	fi
+	if [ $1 = "search" ]; then
+		exec yay -Ss $2
+	fi
+
+fi
