@@ -7,10 +7,17 @@ if [ -z $1 ]; then
 	upgrade		performs system upgrade"
 
 else
-
+	if [ $1 = "install" ]; then
+		exec yay -Sy $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $16 $16
+	fi 
 	if [ $1 = "update" ]; then
 		exec yay -Sy
 	fi
+	if [ $1 = "upgrade" ]; then
+		exec yay -Syu
+	fi
+	if [ $1 - "find" ]; then
+		exec yay -Ss $2	
 	if [ $1 = "search" ]; then
 		exec yay -Ss $2
 	fi
