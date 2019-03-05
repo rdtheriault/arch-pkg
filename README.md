@@ -1,5 +1,4 @@
-# arch-pkg
 ## Things to do
-* flesh out wrapper,
 * Finnish installer script
-* bundle latest `yay` binary
+
+## Yay 9.1.0 is bundled with if you do not have yay installed.
