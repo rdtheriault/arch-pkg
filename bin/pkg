@@ -40,8 +40,10 @@ case "$MODE" in
           "UPDATE" )
                yay -Sy
 			   ;;
+			   
 		  "UPGRADE" )
                yay -Syu
+			   ;;
  	 esac
      exit 0
 else
