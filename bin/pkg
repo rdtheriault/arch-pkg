@@ -14,7 +14,6 @@ case "$1" in
 
      "update"|"-u" )
           MODE="UPDATE"
-          VOL="$2"
           ;;
       * )
 			echo "Commands availiable
@@ -27,15 +26,15 @@ case "$1" in
 esac
 case "$MODE" in
           "INSTALL" )
-               yay -S $2 $3 $4 $5 $6 $7 $8 $9
+               yay -S ${@:2}
                ;;
 
           "REMOVE" )
-               yay -R $2 $3 $4 $5 $6 $7 $8 $9
+               yay -R ${@:2}
                ;;
 
           "SEARCH" )
-               yay -S $2 $3 $4 $5 $6 $7 $8 $9
+               yay -Ss ${@:2}
                ;;
 
           "UPDATE" )
