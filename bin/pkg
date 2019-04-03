@@ -41,7 +41,7 @@ case "$MODE" in
                yay -Sy
 			   ;;
 		  "UPGRADE" )
-		  		yay -Syu
+               yay -Syu
  	 esac
      exit 0
 else
